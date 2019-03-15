@@ -6,7 +6,7 @@ alphaVantageKey = '&apikey=OYAJLARX2ZAA2T1B'
 url ="https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=full&symbol="
 
 if len(sys.argv) == 1:
-    print("Usage: highestStockPrice ticker YYYY-MM-DD YYYY-MM-DD")
+    print("Usage: highestStockPrice ticker YYYY-MM-DD(start) YYYY-MM-DD(end)")
 else:
     urlWithTicker = url+sys.argv[1]+alphaVantageKey
     myResponse = requests.get(urlWithTicker)
