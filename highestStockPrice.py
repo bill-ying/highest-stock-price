@@ -15,4 +15,4 @@ else:
     prices = jsonData[key]
     pricesInDates = {k: v for k, v in prices.items() if k >= sys.argv[2] and k <= sys.argv[3]}
     dateKey = max(pricesInDates, key=lambda x: float(pricesInDates[x]['4. close']))
-    print(dateKey, pricesInDates[dateKey]['4. close'])
+    print(dateKey, "${0:.2f}".format(float(pricesInDates[dateKey]['4. close'])))
