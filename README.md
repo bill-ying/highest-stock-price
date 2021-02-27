@@ -10,4 +10,4 @@ To run the program:
 The security can be listed in New York, London, or Toronto:
 - New York listed security, use ticker directly (e.g. AAPL)
 - London listed security, use ticker.LON (e.g. BARC.LON)
-- Toronto Listed security, use ticker.TO (e.g. SU.TO)
+- Toronto listed security, use ticker.TO (e.g. SU.TO)
